@@ -1,0 +1,10 @@
+C:\Users\kondo\source\repos\Downloader\Downloader\bin\Release\Downloader.exe.config
+C:\Users\kondo\source\repos\Downloader\Downloader\bin\Release\Downloader.exe
+C:\Users\kondo\source\repos\Downloader\Downloader\bin\Release\Downloader.pdb
+C:\Users\kondo\source\repos\Downloader\Downloader\obj\Release\Downloader.Form1.resources
+C:\Users\kondo\source\repos\Downloader\Downloader\obj\Release\Downloader.Properties.Resources.resources
+C:\Users\kondo\source\repos\Downloader\Downloader\obj\Release\Downloader.csproj.GenerateResource.Cache
+C:\Users\kondo\source\repos\Downloader\Downloader\obj\Release\Downloader.csproj.CoreCompileInputs.cache
+C:\Users\kondo\source\repos\Downloader\Downloader\obj\Release\Downloader.exe
+C:\Users\kondo\source\repos\Downloader\Downloader\obj\Release\Downloader.pdb
+C:\Users\kondo\source\repos\Downloader\Downloader\obj\Release\Downloader.csprojResolveAssemblyReference.cache
