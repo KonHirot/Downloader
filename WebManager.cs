@@ -9,6 +9,10 @@ namespace Downloader
 {
     class WebManager
     {
+        /// <summary>
+        /// ドラッグドロップされた画像ファイルのURLを元に画像をダウンロードする
+        /// </summary>
+        /// <param name="src"></param>
         private void DownloadWebImageFile(String src)
         {
             WebClient client = new WebClient();

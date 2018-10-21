@@ -11,6 +11,7 @@ namespace Downloader
 {
     class FileManager
     {
+
         private void copyFile(String path)
         {
             File.Copy(path, FileUtil.makeFileName(Form1.SavePath));

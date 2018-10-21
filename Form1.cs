@@ -21,28 +21,35 @@ namespace Downloader
             Console.WriteLine("success read " + SavePath);
         }
 
+        /// <summary>
+        /// 画像のファイル保存先を設定
+        /// </summary>
         private void GetsavePath() {
             string currentDir = System.IO.Directory.GetCurrentDirectory();
             // テキストに記載されたファイル保存先を読み込む
-            StreamReader sr = 
-                new StreamReader(currentDir + FileLocationTextName, Encoding.GetEncoding("SHIFT_JIS"));
-            while (sr.EndOfStream == false)
-            {
-                // 一行目にパスが記載されているのみ
-                SavePath = sr.ReadLine();
+            using (StreamReader sr =
+                new StreamReader(currentDir + FileLocationTextName, Encoding.GetEncoding("SHIFT_JIS")))
+            { 
+                while (sr.EndOfStream == false)
+                {
+                    // 一行目にパスが記載されているのみ
+                    SavePath = sr.ReadLine();
+                }
             }
         }
 
 
-
+        /// <summary>
+        /// 画像がアプリにドラッグドロップされたとき、画像を保存する
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormMain_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
                 // string src = e.Data.GetData(DataFormats.Text).ToString();
                 // DownloadWebImageFile(src);
-
-                // 
 
                 // tmpファイルのパスを取得
                 var bmp = e.Data.GetData(DataFormats.FileDrop);
